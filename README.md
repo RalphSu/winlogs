@@ -28,7 +28,7 @@
 选择“启动程序”，点击“下一步”。
 在“程序/脚本”输入框中，输入Python的可执行文件路径（例如C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe，因为直接在任务计划程序中设置以管理员权限运行可能不起作用）。
 在“添加参数”输入框中，输入以下命令，使用PowerShell来以管理员权限运行Python脚本：
--Command "Start-Process 'C:\Python39\python.exe' -ArgumentList 'C:\path\to\your\script.py' -Verb RunAs"
+-Command "Start-Process 'C:\Users\Administrator\AppData\Local\Programs\Python\Python312\python.exe' -ArgumentList 'C:\winlogs\extract_log.py' -Verb RunAs"
 请将C:\Python39\python.exe替换为你的Python可执行文件的实际路径，将C:\path\to\your\script.py替换为你的Python脚本的实际路径。
 “起始于”留空即可。
 配置设置：
