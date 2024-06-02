@@ -49,4 +49,13 @@
 
 另外，确保你的Python脚本没有硬编码的路径，因为以管理员权限运行时，用户的主目录路径可能与普通用户权限时不同。
 
-# 
+# 如何手动运行
+
+假设代码在 c:\winlogs
+
+执行
+``` 
+cd c:\winlogs
+python extract_log.py
+```
+c:\blacklist和c:\whitelist是生成黑名单和白名单，windows防火墙会根据这两个名单建立规则。同时 c:\\login.log是中间数据，是脚本执行时过去两个小时的登录日志
